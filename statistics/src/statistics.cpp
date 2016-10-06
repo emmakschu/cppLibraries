@@ -7,26 +7,20 @@
 //============================================================================
 
 #include <iostream>
+#include <vector>
 #include "descriptive.h"
 
 int main()
 {
 	std::cout << "Statistics Library test file:" << std::endl;
 
-	double myArray[] = {21, 12, 15, 7, 31, 9, 5, 16, 14};
+	std::vector<double> myArray[] = {1,12,7,13,2,5,3,6};
 
-	double* sorted = sort(myArray);
+	double arrayLength = length(myArray);
 
-	for (int i = 0; i < sizeof(sorted); i++)
-	{
-		std::cout << sorted[i] << std::endl;
-	}
+	std::cout << arrayLength << std::endl;
 
-	std::cout << "" << std::endl;
+	double mySum = arraySum(myArray);
 
-	double myMedian = median(myArray);
-
-	std::cout << myMedian << std::endl;
-
-	return 0;
+	std::cout << mySum << std::endl;
 }

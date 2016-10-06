@@ -1,21 +1,24 @@
 /*
- * descriptive.h
+ * statistics/descriptive.h
  *
- *  Created on: Oct 4, 2016
- *      Author: michael
+ * Author: Michael K Schumacher
+ * Github: mkschu
+ * Web:    mkschumacher.com
+ *
+ * Created:  10/06/2016
+ * Modified: 10/06/2016
+ *
+ * Header file for descriptive.cpp, a C++ library
+ * for performing basic descriptive statistical
+ * calculations.
  */
 
 #ifndef DESCRIPTIVE_H_
 #define DESCRIPTIVE_H_
 
-double* sort(double data[]);
+double length(std::vector<double> myArray[]);
 
-double sum(double data[]);
-
-double mean(double data[]);
-
-double median(double data[]);
-
+double arraySum(std::vector<double> myArray[]);
 
 
 #endif /* DESCRIPTIVE_H_ */

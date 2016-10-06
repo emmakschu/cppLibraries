@@ -1,0 +1,510 @@
+08:20:27 **** Clean-only build of configuration Debug for project statistics ****
+make clean 
+rm -rf  ./src/descriptive.o ./src/statistics.o  ./src/descriptive.d ./src/statistics.d  statistics
+ 
+08:20:27 **** Build of configuration Debug for project statistics ****
+make all 
+Building file: ../src/descriptive.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/descriptive.d" -MT"src/descriptive.o" -o "src/descriptive.o" "../src/descriptive.cpp"
+../src/descriptive.cpp: In function ‘int length(double*)’:
+../src/descriptive.cpp:20:27: warning: ‘sizeof’ on array function parameter ‘myArray’ will return size of ‘double*’ [-Wsizeof-array-argument]
+  while (i < sizeof(myArray))
+                           ^
+../src/descriptive.cpp:16:27: note: declared here
+ int length(double myArray[])
+                           ^
+../src/descriptive.cpp:20:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while (i < sizeof(myArray))
+         ~~^~~~~~~~~
+Finished building: ../src/descriptive.cpp
+ 
+Building file: ../src/statistics.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/statistics.d" -MT"src/statistics.o" -o "src/statistics.o" "../src/statistics.cpp"
+../src/statistics.cpp: In function ‘int main()’:
+../src/statistics.cpp:18:29: error: ‘length’ cannot be used as a function
+  int length = length(myArray);
+                             ^
+make: *** [src/subdir.mk:23: src/statistics.o] Error 1
+08:21:09 **** Incremental Build of configuration Debug for project statistics ****
+make all 
+Building file: ../src/statistics.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/statistics.d" -MT"src/statistics.o" -o "src/statistics.o" "../src/statistics.cpp"
+Finished building: ../src/statistics.cpp
+ 
+Building target: statistics
+Invoking: GCC C++ Linker
+g++  -o "statistics"  ./src/descriptive.o ./src/statistics.o   
+Finished building target: statistics
+ 
+08:21:16 **** Incremental Build of configuration Debug for project statistics ****
+make all 
+make: Nothing to be done for 'all'.
+08:21:35 **** Incremental Build of configuration Debug for project statistics ****
+make all 
+Building file: ../src/descriptive.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/descriptive.d" -MT"src/descriptive.o" -o "src/descriptive.o" "../src/descriptive.cpp"
+../src/descriptive.cpp: In function ‘int length(double*)’:
+../src/descriptive.cpp:20:28: warning: ‘sizeof’ on array function parameter ‘myArray’ will return size of ‘double*’ [-Wsizeof-array-argument]
+  while (i <= sizeof(myArray))
+                            ^
+../src/descriptive.cpp:16:27: note: declared here
+ int length(double myArray[])
+                           ^
+../src/descriptive.cpp:20:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while (i <= sizeof(myArray))
+         ~~^~~~~~~~~~
+Finished building: ../src/descriptive.cpp
+ 
+Building target: statistics
+Invoking: GCC C++ Linker
+g++  -o "statistics"  ./src/descriptive.o ./src/statistics.o   
+Finished building target: statistics
+ 
+08:24:03 **** Incremental Build of configuration Debug for project statistics ****
+make all 
+Building file: ../src/descriptive.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/descriptive.d" -MT"src/descriptive.o" -o "src/descriptive.o" "../src/descriptive.cpp"
+../src/descriptive.cpp: In function ‘int length(double*)’:
+../src/descriptive.cpp:20:28: warning: ‘sizeof’ on array function parameter ‘myArray’ will return size of ‘double*’ [-Wsizeof-array-argument]
+  while (i <= sizeof(myArray))
+                            ^
+../src/descriptive.cpp:16:27: note: declared here
+ int length(double myArray[])
+                           ^
+../src/descriptive.cpp:20:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while (i <= sizeof(myArray))
+         ~~^~~~~~~~~~
+../src/descriptive.cpp: In function ‘double arraySum(double*)’:
+../src/descriptive.cpp:33:33: warning: ‘sizeof’ on array function parameter ‘myArray’ will return size of ‘double*’ [-Wsizeof-array-argument]
+  for (i = 0; i <= sizeof(myArray); i++)
+                                 ^
+../src/descriptive.cpp:28:32: note: declared here
+ double arraySum(double myArray[])
+                                ^
+../src/descriptive.cpp:33:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (i = 0; i <= sizeof(myArray); i++)
+              ~~^~~~~~~~~~
+Finished building: ../src/descriptive.cpp
+ 
+Building file: ../src/statistics.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/statistics.d" -MT"src/statistics.o" -o "src/statistics.o" "../src/statistics.cpp"
+Finished building: ../src/statistics.cpp
+ 
+Building target: statistics
+Invoking: GCC C++ Linker
+g++  -o "statistics"  ./src/descriptive.o ./src/statistics.o   
+Finished building target: statistics
+ 
+08:24:40 **** Incremental Build of configuration Debug for project statistics ****
+make all 
+Building file: ../src/statistics.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/statistics.d" -MT"src/statistics.o" -o "src/statistics.o" "../src/statistics.cpp"
+Finished building: ../src/statistics.cpp
+ 
+Building target: statistics
+Invoking: GCC C++ Linker
+g++  -o "statistics"  ./src/descriptive.o ./src/statistics.o   
+Finished building target: statistics
+ 
+08:24:57 **** Incremental Build of configuration Debug for project statistics ****
+make all 
+make: Nothing to be done for 'all'.
+08:25:17 **** Incremental Build of configuration Debug for project statistics ****
+make all 
+Building file: ../src/descriptive.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/descriptive.d" -MT"src/descriptive.o" -o "src/descriptive.o" "../src/descriptive.cpp"
+../src/descriptive.cpp: In function ‘int length(double*)’:
+../src/descriptive.cpp:20:27: warning: ‘sizeof’ on array function parameter ‘myArray’ will return size of ‘double*’ [-Wsizeof-array-argument]
+  while (i < sizeof(myArray))
+                           ^
+../src/descriptive.cpp:16:27: note: declared here
+ int length(double myArray[])
+                           ^
+../src/descriptive.cpp:20:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while (i < sizeof(myArray))
+         ~~^~~~~~~~~
+../src/descriptive.cpp: In function ‘double arraySum(double*)’:
+../src/descriptive.cpp:33:33: warning: ‘sizeof’ on array function parameter ‘myArray’ will return size of ‘double*’ [-Wsizeof-array-argument]
+  for (i = 0; i <= sizeof(myArray); i++)
+                                 ^
+../src/descriptive.cpp:28:32: note: declared here
+ double arraySum(double myArray[])
+                                ^
+../src/descriptive.cpp:33:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (i = 0; i <= sizeof(myArray); i++)
+              ~~^~~~~~~~~~
+Finished building: ../src/descriptive.cpp
+ 
+Building target: statistics
+Invoking: GCC C++ Linker
+g++  -o "statistics"  ./src/descriptive.o ./src/statistics.o   
+Finished building target: statistics
+ 
+08:28:57 **** Incremental Build of configuration Debug for project statistics ****
+make all 
+Building file: ../src/descriptive.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/descriptive.d" -MT"src/descriptive.o" -o "src/descriptive.o" "../src/descriptive.cpp"
+../src/descriptive.cpp: In function ‘double length(double*)’:
+../src/descriptive.cpp:20:27: warning: ‘sizeof’ on array function parameter ‘myArray’ will return size of ‘double*’ [-Wsizeof-array-argument]
+  while (i < sizeof(myArray))
+                           ^
+../src/descriptive.cpp:16:30: note: declared here
+ double length(double myArray[])
+                              ^
+../src/descriptive.cpp: In function ‘double arraySum(double*)’:
+../src/descriptive.cpp:33:33: warning: ‘sizeof’ on array function parameter ‘myArray’ will return size of ‘double*’ [-Wsizeof-array-argument]
+  for (i = 0; i <= sizeof(myArray); i++)
+                                 ^
+../src/descriptive.cpp:28:32: note: declared here
+ double arraySum(double myArray[])
+                                ^
+../src/descriptive.cpp:33:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (i = 0; i <= sizeof(myArray); i++)
+              ~~^~~~~~~~~~
+Finished building: ../src/descriptive.cpp
+ 
+Building file: ../src/statistics.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/statistics.d" -MT"src/statistics.o" -o "src/statistics.o" "../src/statistics.cpp"
+Finished building: ../src/statistics.cpp
+ 
+Building target: statistics
+Invoking: GCC C++ Linker
+g++  -o "statistics"  ./src/descriptive.o ./src/statistics.o   
+Finished building target: statistics
+ 
+08:29:34 **** Incremental Build of configuration Debug for project statistics ****
+make all 
+Building file: ../src/descriptive.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/descriptive.d" -MT"src/descriptive.o" -o "src/descriptive.o" "../src/descriptive.cpp"
+../src/descriptive.cpp: In function ‘double length(double*)’:
+../src/descriptive.cpp:19:29: warning: ‘sizeof’ on array function parameter ‘myArray’ will return size of ‘double*’ [-Wsizeof-array-argument]
+  double max = sizeof(myArray);
+                             ^
+../src/descriptive.cpp:16:30: note: declared here
+ double length(double myArray[])
+                              ^
+../src/descriptive.cpp: In function ‘double arraySum(double*)’:
+../src/descriptive.cpp:34:33: warning: ‘sizeof’ on array function parameter ‘myArray’ will return size of ‘double*’ [-Wsizeof-array-argument]
+  for (i = 0; i <= sizeof(myArray); i++)
+                                 ^
+../src/descriptive.cpp:29:32: note: declared here
+ double arraySum(double myArray[])
+                                ^
+../src/descriptive.cpp:34:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (i = 0; i <= sizeof(myArray); i++)
+              ~~^~~~~~~~~~
+Finished building: ../src/descriptive.cpp
+ 
+Building target: statistics
+Invoking: GCC C++ Linker
+g++  -o "statistics"  ./src/descriptive.o ./src/statistics.o   
+Finished building target: statistics
+ 
+08:30:03 **** Incremental Build of configuration Debug for project statistics ****
+make all 
+Building file: ../src/descriptive.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/descriptive.d" -MT"src/descriptive.o" -o "src/descriptive.o" "../src/descriptive.cpp"
+../src/descriptive.cpp: In function ‘double length(double*)’:
+../src/descriptive.cpp:19:29: warning: ‘sizeof’ on array function parameter ‘myArray’ will return size of ‘double*’ [-Wsizeof-array-argument]
+  double max = sizeof(myArray);
+                             ^
+../src/descriptive.cpp:16:30: note: declared here
+ double length(double myArray[])
+                              ^
+../src/descriptive.cpp: In function ‘double arraySum(double*)’:
+../src/descriptive.cpp:34:33: warning: ‘sizeof’ on array function parameter ‘myArray’ will return size of ‘double*’ [-Wsizeof-array-argument]
+  for (i = 0; i <= sizeof(myArray); i++)
+                                 ^
+../src/descriptive.cpp:29:32: note: declared here
+ double arraySum(double myArray[])
+                                ^
+../src/descriptive.cpp:34:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (i = 0; i <= sizeof(myArray); i++)
+              ~~^~~~~~~~~~
+Finished building: ../src/descriptive.cpp
+ 
+Building target: statistics
+Invoking: GCC C++ Linker
+g++  -o "statistics"  ./src/descriptive.o ./src/statistics.o   
+Finished building target: statistics
+ 
+08:30:14 **** Incremental Build of configuration Debug for project statistics ****
+make all 
+Building file: ../src/statistics.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/statistics.d" -MT"src/statistics.o" -o "src/statistics.o" "../src/statistics.cpp"
+Finished building: ../src/statistics.cpp
+ 
+Building target: statistics
+Invoking: GCC C++ Linker
+g++  -o "statistics"  ./src/descriptive.o ./src/statistics.o   
+Finished building target: statistics
+ 
+08:30:49 **** Incremental Build of configuration Debug for project statistics ****
+make all 
+Building file: ../src/descriptive.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/descriptive.d" -MT"src/descriptive.o" -o "src/descriptive.o" "../src/descriptive.cpp"
+../src/descriptive.cpp: In function ‘double length(double*)’:
+../src/descriptive.cpp:19:29: warning: ‘sizeof’ on array function parameter ‘myArray’ will return size of ‘double*’ [-Wsizeof-array-argument]
+  double max = sizeof(myArray);
+                             ^
+../src/descriptive.cpp:16:30: note: declared here
+ double length(double myArray[])
+                              ^
+../src/descriptive.cpp: In function ‘double arraySum(double*)’:
+../src/descriptive.cpp:34:33: warning: ‘sizeof’ on array function parameter ‘myArray’ will return size of ‘double*’ [-Wsizeof-array-argument]
+  for (i = 0; i <= sizeof(myArray); i++)
+                                 ^
+../src/descriptive.cpp:29:32: note: declared here
+ double arraySum(double myArray[])
+                                ^
+../src/descriptive.cpp:34:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (i = 0; i <= sizeof(myArray); i++)
+              ~~^~~~~~~~~~
+Finished building: ../src/descriptive.cpp
+ 
+Building file: ../src/statistics.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/statistics.d" -MT"src/statistics.o" -o "src/statistics.o" "../src/statistics.cpp"
+Finished building: ../src/statistics.cpp
+ 
+Building target: statistics
+Invoking: GCC C++ Linker
+g++  -o "statistics"  ./src/descriptive.o ./src/statistics.o   
+Finished building target: statistics
+ 
+08:31:02 **** Incremental Build of configuration Debug for project statistics ****
+make all 
+Building file: ../src/descriptive.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/descriptive.d" -MT"src/descriptive.o" -o "src/descriptive.o" "../src/descriptive.cpp"
+../src/descriptive.cpp: In function ‘double length(double*)’:
+../src/descriptive.cpp:19:29: warning: ‘sizeof’ on array function parameter ‘myArray’ will return size of ‘double*’ [-Wsizeof-array-argument]
+  double max = sizeof(myArray);
+                             ^
+../src/descriptive.cpp:16:30: note: declared here
+ double length(double myArray[])
+                              ^
+../src/descriptive.cpp: In function ‘double arraySum(double*)’:
+../src/descriptive.cpp:34:33: warning: ‘sizeof’ on array function parameter ‘myArray’ will return size of ‘double*’ [-Wsizeof-array-argument]
+  for (i = 0; i <= sizeof(myArray); i++)
+                                 ^
+../src/descriptive.cpp:29:32: note: declared here
+ double arraySum(double myArray[])
+                                ^
+../src/descriptive.cpp:34:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (i = 0; i <= sizeof(myArray); i++)
+              ~~^~~~~~~~~~
+Finished building: ../src/descriptive.cpp
+ 
+Building target: statistics
+Invoking: GCC C++ Linker
+g++  -o "statistics"  ./src/descriptive.o ./src/statistics.o   
+Finished building target: statistics
+ 
+08:31:11 **** Incremental Build of configuration Debug for project statistics ****
+make all 
+Building file: ../src/statistics.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/statistics.d" -MT"src/statistics.o" -o "src/statistics.o" "../src/statistics.cpp"
+Finished building: ../src/statistics.cpp
+ 
+Building target: statistics
+Invoking: GCC C++ Linker
+g++  -o "statistics"  ./src/descriptive.o ./src/statistics.o   
+Finished building target: statistics
+ 
+08:32:37 **** Incremental Build of configuration Debug for project statistics ****
+make all 
+Building file: ../src/descriptive.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/descriptive.d" -MT"src/descriptive.o" -o "src/descriptive.o" "../src/descriptive.cpp"
+../src/descriptive.cpp: In function ‘double length(double*)’:
+../src/descriptive.cpp:19:20: warning: ‘sizeof’ on array function parameter ‘myArray’ will return size of ‘double*’ [-Wsizeof-array-argument]
+  i = sizeof(myArray) / sizeof(*myArray);
+                    ^
+../src/descriptive.cpp:16:30: note: declared here
+ double length(double myArray[])
+                              ^
+../src/descriptive.cpp: In function ‘double arraySum(double*)’:
+../src/descriptive.cpp:29:33: warning: ‘sizeof’ on array function parameter ‘myArray’ will return size of ‘double*’ [-Wsizeof-array-argument]
+  for (i = 0; i <= sizeof(myArray); i++)
+                                 ^
+../src/descriptive.cpp:24:32: note: declared here
+ double arraySum(double myArray[])
+                                ^
+../src/descriptive.cpp:29:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (i = 0; i <= sizeof(myArray); i++)
+              ~~^~~~~~~~~~
+Finished building: ../src/descriptive.cpp
+ 
+Building target: statistics
+Invoking: GCC C++ Linker
+g++  -o "statistics"  ./src/descriptive.o ./src/statistics.o   
+Finished building target: statistics
+ 
+08:33:47 **** Incremental Build of configuration Debug for project statistics ****
+make all 
+make: Nothing to be done for 'all'.
+08:33:51 **** Incremental Build of configuration Debug for project statistics ****
+make all 
+make: Nothing to be done for 'all'.
+08:37:37 **** Incremental Build of configuration Debug for project statistics ****
+make all 
+Building file: ../src/descriptive.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/descriptive.d" -MT"src/descriptive.o" -o "src/descriptive.o" "../src/descriptive.cpp"
+../src/descriptive.cpp: In function ‘double length(double*)’:
+../src/descriptive.cpp:21:20: warning: ‘sizeof’ on array function parameter ‘myArray’ will return size of ‘double*’ [-Wsizeof-array-argument]
+  i = sizeof(myArray) / sizeof(*myArray);
+                    ^
+../src/descriptive.cpp:18:30: note: declared here
+ double length(double myArray[])
+                              ^
+../src/descriptive.cpp: In function ‘double arraySum(double*)’:
+../src/descriptive.cpp:31:33: warning: ‘sizeof’ on array function parameter ‘myArray’ will return size of ‘double*’ [-Wsizeof-array-argument]
+  for (i = 0; i <= sizeof(myArray); i++)
+                                 ^
+../src/descriptive.cpp:26:32: note: declared here
+ double arraySum(double myArray[])
+                                ^
+../src/descriptive.cpp:31:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (i = 0; i <= sizeof(myArray); i++)
+              ~~^~~~~~~~~~
+Finished building: ../src/descriptive.cpp
+ 
+Building file: ../src/statistics.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/statistics.d" -MT"src/statistics.o" -o "src/statistics.o" "../src/statistics.cpp"
+../src/statistics.cpp: In function ‘int main()’:
+../src/statistics.cpp:19:37: error: cannot convert ‘std::vector<double>’ to ‘double*’ for argument ‘1’ to ‘double length(double*)’
+  double arrayLength = length(myArray);
+                                     ^
+../src/statistics.cpp:23:33: error: cannot convert ‘std::vector<double>’ to ‘double*’ for argument ‘1’ to ‘double arraySum(double*)’
+  double mySum = arraySum(myArray);
+                                 ^
+make: *** [src/subdir.mk:23: src/statistics.o] Error 1
+08:38:47 **** Incremental Build of configuration Debug for project statistics ****
+make all 
+Building file: ../src/descriptive.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/descriptive.d" -MT"src/descriptive.o" -o "src/descriptive.o" "../src/descriptive.cpp"
+../src/descriptive.cpp: In function ‘double length(std::vector<double>*)’:
+../src/descriptive.cpp:21:20: warning: ‘sizeof’ on array function parameter ‘myArray’ will return size of ‘std::vector<double>*’ [-Wsizeof-array-argument]
+  i = sizeof(myArray) / sizeof(*myArray);
+                    ^
+../src/descriptive.cpp:18:43: note: declared here
+ double length(std::vector<double> myArray[])
+                                           ^
+../src/descriptive.cpp: In function ‘double arraySum(std::vector<double>*)’:
+../src/descriptive.cpp:31:33: warning: ‘sizeof’ on array function parameter ‘myArray’ will return size of ‘std::vector<double>*’ [-Wsizeof-array-argument]
+  for (i = 0; i <= sizeof(myArray); i++)
+                                 ^
+../src/descriptive.cpp:26:45: note: declared here
+ double arraySum(std::vector<double> myArray[])
+                                             ^
+../src/descriptive.cpp:31:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (i = 0; i <= sizeof(myArray); i++)
+              ~~^~~~~~~~~~
+../src/descriptive.cpp:33:7: error: no match for ‘operator+=’ (operand types are ‘double’ and ‘std::vector<double>’)
+   sum += myArray[i];
+   ~~~~^~~~~~~~~~~~~
+make: *** [src/subdir.mk:23: src/descriptive.o] Error 1
+08:40:34 **** Incremental Build of configuration Debug for project statistics ****
+make all 
+Building file: ../src/descriptive.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/descriptive.d" -MT"src/descriptive.o" -o "src/descriptive.o" "../src/descriptive.cpp"
+../src/descriptive.cpp: In function ‘double length(std::vector<double>*)’:
+../src/descriptive.cpp:21:14: error: request for member ‘size’ in ‘myArray’, which is of pointer type ‘std::vector<double>*’ (maybe you meant to use ‘->’ ?)
+  i = myArray.size;
+              ^~~~
+../src/descriptive.cpp: In function ‘double arraySum(std::vector<double>*)’:
+../src/descriptive.cpp:30:27: error: request for member ‘size’ in ‘myArray’, which is of pointer type ‘std::vector<double>*’ (maybe you meant to use ‘->’ ?)
+  for (i = 0; i <= myArray.size; i++)
+                           ^~~~
+../src/descriptive.cpp:32:7: error: no match for ‘operator+=’ (operand types are ‘double’ and ‘std::vector<double>’)
+   sum += myArray[i];
+   ~~~~^~~~~~~~~~~~~
+make: *** [src/subdir.mk:23: src/descriptive.o] Error 1
+08:40:39 **** Incremental Build of configuration Debug for project statistics ****
+make all 
+Building file: ../src/descriptive.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/descriptive.d" -MT"src/descriptive.o" -o "src/descriptive.o" "../src/descriptive.cpp"
+../src/descriptive.cpp: In function ‘double length(std::vector<double>*)’:
+../src/descriptive.cpp:21:14: error: request for member ‘size’ in ‘myArray’, which is of pointer type ‘std::vector<double>*’ (maybe you meant to use ‘->’ ?)
+  i = myArray.size;
+              ^~~~
+../src/descriptive.cpp: In function ‘double arraySum(std::vector<double>*)’:
+../src/descriptive.cpp:30:27: error: request for member ‘size’ in ‘myArray’, which is of pointer type ‘std::vector<double>*’ (maybe you meant to use ‘->’ ?)
+  for (i = 0; i <= myArray.size; i++)
+                           ^~~~
+../src/descriptive.cpp:32:7: error: no match for ‘operator+=’ (operand types are ‘double’ and ‘std::vector<double>’)
+   sum += myArray[i];
+   ~~~~^~~~~~~~~~~~~
+make: *** [src/subdir.mk:23: src/descriptive.o] Error 1
+08:40:52 **** Incremental Build of configuration Debug for project statistics ****
+make all 
+Building file: ../src/descriptive.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/descriptive.d" -MT"src/descriptive.o" -o "src/descriptive.o" "../src/descriptive.cpp"
+../src/descriptive.cpp: In function ‘double length(std::vector<double>*)’:
+../src/descriptive.cpp:21:14: error: request for member ‘size’ in ‘myArray’, which is of pointer type ‘std::vector<double>*’ (maybe you meant to use ‘->’ ?)
+  i = myArray.size;
+              ^~~~
+../src/descriptive.cpp: In function ‘double arraySum(std::vector<double>*)’:
+../src/descriptive.cpp:30:27: error: request for member ‘size’ in ‘myArray’, which is of pointer type ‘std::vector<double>*’ (maybe you meant to use ‘->’ ?)
+  for (i = 0; i <= myArray.size; i++)
+                           ^~~~
+../src/descriptive.cpp:32:7: error: no match for ‘operator+=’ (operand types are ‘double’ and ‘std::vector<double>’)
+   sum += myArray[i];
+   ~~~~^~~~~~~~~~~~~
+make: *** [src/subdir.mk:23: src/descriptive.o] Error 1
+08:41:25 **** Incremental Build of configuration Debug for project statistics ****
+make all 
+Building file: ../src/descriptive.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/descriptive.d" -MT"src/descriptive.o" -o "src/descriptive.o" "../src/descriptive.cpp"
+../src/descriptive.cpp: In function ‘double length(std::vector<double>*)’:
+../src/descriptive.cpp:21:14: error: request for member ‘size’ in ‘myArray’, which is of pointer type ‘std::vector<double>*’ (maybe you meant to use ‘->’ ?)
+  i = myArray.size();
+              ^~~~
+../src/descriptive.cpp: In function ‘double arraySum(std::vector<double>*)’:
+../src/descriptive.cpp:30:27: error: request for member ‘size’ in ‘myArray’, which is of pointer type ‘std::vector<double>*’ (maybe you meant to use ‘->’ ?)
+  for (i = 0; i <= myArray.size(); i++)
+                           ^~~~
+../src/descriptive.cpp:32:7: error: no match for ‘operator+=’ (operand types are ‘double’ and ‘std::vector<double>’)
+   sum += myArray[i];
+   ~~~~^~~~~~~~~~~~~
+make: *** [src/subdir.mk:23: src/descriptive.o] Error 1
+08:42:26 **** Incremental Build of configuration Debug for project statistics ****
+make all 
+Building file: ../src/descriptive.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/descriptive.d" -MT"src/descriptive.o" -o "src/descriptive.o" "../src/descriptive.cpp"
+../src/descriptive.cpp: In function ‘double length(std::vector<double>*)’:
+../src/descriptive.cpp:21:11: error: ‘template<class _Tp, class _Alloc> class std::vector’ used without template parameters
+  i = std::vector::size(myArray);
+           ^~~~~~
+../src/descriptive.cpp: In function ‘double arraySum(std::vector<double>*)’:
+../src/descriptive.cpp:30:23: error: ‘template<class _Tp, class _Alloc> class std::vector’ used without template parameters
+  for (i = 0; i < std::vector::size(myArray); i++)
+                       ^~~~~~
+../src/descriptive.cpp:32:7: error: no match for ‘operator+=’ (operand types are ‘double’ and ‘std::vector<double>’)
+   sum += myArray[i];
+   ~~~~^~~~~~~~~~~~~
+make: *** [src/subdir.mk:23: src/descriptive.o] Error 1

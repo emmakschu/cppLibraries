@@ -1,0 +1,14 @@
+/*
+ * statistics/descriptive.cpp
+ *
+ * Author: Michael K Schumacher
+ * Github: mkschu
+ * Web:    mkschumacher.com
+ *
+ * Created:  10/06/2016
+ * Modified: 10/06/2016
+ *
+ * A custom C++ library for performing basic descriptive
+ * statistical calculations
+ */
+

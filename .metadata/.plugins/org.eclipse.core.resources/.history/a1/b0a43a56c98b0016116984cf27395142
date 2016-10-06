@@ -1,0 +1,40 @@
+/*
+ * statistics/descriptive.cpp
+ *
+ * Author: Michael K Schumacher
+ * Github: mkschu
+ * Web:    mkschumacher.com
+ *
+ * Created:  10/06/2016
+ * Modified: 10/06/2016
+ *
+ * A custom C++ library for performing basic descriptive
+ * statistical calculations. Will be Mirrored by equivalent
+ * libraries for Python3 and Java
+ */
+
+double length(double myArray[])
+{
+	double i = 0;
+	double max = sizeof(myArray);
+
+	while (i < max - 1)
+	{
+		i++;
+	}
+
+	return i;
+}
+
+double arraySum(double myArray[])
+{
+	double sum = 0;
+	int i;
+
+	for (i = 0; i <= sizeof(myArray); i++)
+	{
+		sum += myArray[i];
+	}
+
+	return sum;
+}

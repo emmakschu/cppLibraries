@@ -1,0 +1,20 @@
+08:42:26 **** Incremental Build of configuration Debug for project statistics ****
+make all 
+Building file: ../src/descriptive.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/descriptive.d" -MT"src/descriptive.o" -o "src/descriptive.o" "../src/descriptive.cpp"
+../src/descriptive.cpp: In function ‘double length(std::vector<double>*)’:
+../src/descriptive.cpp:21:11: error: ‘template<class _Tp, class _Alloc> class std::vector’ used without template parameters
+  i = std::vector::size(myArray);
+           ^~~~~~
+../src/descriptive.cpp: In function ‘double arraySum(std::vector<double>*)’:
+../src/descriptive.cpp:30:23: error: ‘template<class _Tp, class _Alloc> class std::vector’ used without template parameters
+  for (i = 0; i < std::vector::size(myArray); i++)
+                       ^~~~~~
+../src/descriptive.cpp:32:7: error: no match for ‘operator+=’ (operand types are ‘double’ and ‘std::vector<double>’)
+   sum += myArray[i];
+   ~~~~^~~~~~~~~~~~~
+make: *** [src/subdir.mk:23: src/descriptive.o] Error 1
+
+08:42:27 Build Finished (took 194ms)
+

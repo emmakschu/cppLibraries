@@ -1,0 +1,26 @@
+//============================================================================
+// Name        : statistics.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <vector>
+#include "descriptive.h"
+
+int main()
+{
+	std::cout << "Statistics Library test file:" << std::endl;
+
+	std::vector<double> myVector = {1,12,7,13,2,5,3,6};
+
+	double arrayLength = length(myArray);
+
+	std::cout << arrayLength << std::endl;
+
+	double mySum = arraySum(myArray);
+
+	std::cout << mySum << std::endl;
+}

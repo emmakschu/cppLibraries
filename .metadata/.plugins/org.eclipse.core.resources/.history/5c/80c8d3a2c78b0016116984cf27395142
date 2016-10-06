@@ -1,0 +1,19 @@
+//============================================================================
+// Name        : statistics.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include "descriptive.h"
+
+int main()
+{
+	std::cout << "Statistics Library test file:" << std::endl;
+
+	double myArray[] = {21, 12, 15, 7, 31, 9, 5, 16, 14};
+
+	int length = length(myArray);
+}
